@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <>
     <section className="w-full bg-white py-8 px-4 sm:px-8 md:px-12 flex flex-col items-center min-h-[90vh] justify-center">
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        {/* Left Content */}
-        <div className="flex-1 w-full">
+      <div className="max-w-6xl w-full flex flex-col items-center justify-center min-h-[60vh]">
+        {/* Centered Content */}
+        <div className="w-full flex flex-col items-center justify-center text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
-            Empowering You<br />
-            with Digital <span className="text-orange-500">Skills</span>
+            Empowering You with <br />
+            Digital <span className="text-orange-500">Skills</span>
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-5 max-w-md">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-5 max-w-lg">
             Our platform makes education flexible and convenient, so you can achieve your goals whenever and wherever you choose.
           </p>
           <div className="flex items-center gap-4 mb-5">
@@ -59,14 +59,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Right Content (Image placeholder) */}
-        <div className="flex-1 flex flex-col items-center relative w-full">
-          {/* Image Placeholder - smaller and styled */}
-          <div className="w-48 h-56 sm:w-56 sm:h-64 md:w-60 md:h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center overflow-hidden border border-orange-100">
-            <span className="text-gray-400 text-base">[ Place your image here ]</span>
-          </div>
-        </div>
-      </div>     
+      </div>    
     </section>
 
     {/* Stats Section */}

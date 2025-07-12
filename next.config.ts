@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     domains: [
       "randomuser.me",
       "upload.wikimedia.org"
-    ],
-  },
+    ]
+  }
 };
 
 export default nextConfig;
