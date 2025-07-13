@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-    <section className="w-full bg-white py-0 sm:py-0 px-3 sm:px-20 md:px-6 flex items-center min-h-[30vh] sm:min-h-[10vh] md:min-h-[90vh] justify-center">
+    <section className="w-full bg-white py-0 sm:py-0 px-6 sm:px-20 md:px-6 flex items-center min-h-[18vh] sm:min-h-[10vh] md:min-h-[90vh] justify-center">
       <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[60vh] sm:min-h-[10vh]">
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left">
@@ -54,7 +54,7 @@ export default function Home() {
     </section>
 
     {/* Stats Section */}
-    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-8 px-6 sm:py-20 sm:px-10 flex flex-col items-center">
+    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-8 px-6 sm:py-30 sm:px-10 flex flex-col items-center">
       <div className="max-w-5xl w-full flex flex-col items-center py-8 sm:py-0">
         <div className="flex flex-row justify-center gap-8 xs:gap-10 sm:gap-12 md:gap-16 w-full mb-8">
           <div className="flex flex-col items-center">
