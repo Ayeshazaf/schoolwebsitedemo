@@ -54,9 +54,9 @@ export default function Home() {
     </section>
 
     {/* Stats Section */}
-    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-14 sm:py-20 px-4 flex flex-col items-center">
-      <div className="max-w-5xl w-full flex flex-col items-center">
-        <div className="flex flex-row justify-center gap-8 md:gap-16 w-full mb-8">
+    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-8 sm:py-20 px-6 sm:px-10 flex flex-col items-center">
+      <div className="max-w-5xl w-full flex flex-col items-center py-6 sm:py-0">
+        <div className="flex flex-row justify-center gap-10 sm:gap-12 md:gap-16 w-full mb-8">
           <div className="flex flex-col items-center">
             <span className="text-4xl font-bold text-gray-900">1K <span className="text-4xl font-semibold">+</span></span>
             <span className="text-gray-500 text-lg mt-1 pr-4">Tutors</span>
