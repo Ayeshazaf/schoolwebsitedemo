@@ -39,7 +39,7 @@ export default function CoursesPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold mb-6">Courses</h1>
       <p className="text-gray-700 mb-4">
         Explore our wide range of courses designed to help you learn and grow.

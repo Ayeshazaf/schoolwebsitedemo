@@ -21,7 +21,6 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:gap-8">
             <Link href="/" className={`${pathname === '/' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Home</Link>
-            <Link href="/#services" className={`${pathname === '/services' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Services</Link>
             <Link href="/courses" className={`${pathname === '/courses' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Courses</Link>
             <Link href="#" className={`${pathname === '/contact' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Contact Us</Link>
           </div>
@@ -77,7 +76,6 @@ export default function Navbar() {
           <div className="flex flex-col gap-4 mt-2">
             <Link href="/" className={`${pathname === '/' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Home</Link>
             <Link href="/courses" className={`${pathname === '/courses' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Courses</Link>
-            <Link href="#" className={`${pathname === '/services' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Services</Link>
             <Link href="#" className={`${pathname === '/contact' ? 'text-orange-500 font-semibold underline underline-offset-4 decoration-orange-400' : 'text-gray-700 hover:text-orange-500 transition'}`}>Contact Us</Link>
             <button className="flex items-center gap-2 text-gray-600 hover:text-orange-500">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

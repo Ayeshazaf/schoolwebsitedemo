@@ -1,14 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
-
-
 export default function Home() {
   return (
     <>
-    <section className="w-full bg-white py-8 px-4 sm:px-8 md:px-12 flex flex-col items-center min-h-[90vh] justify-center">
-      <div className="max-w-6xl w-full flex flex-col items-center justify-center min-h-[60vh]">
-        {/* Centered Content */}
-        <div className="w-full flex flex-col items-center justify-center text-center">
+    <section className="w-full bg-white py-6 px-3 sm:px-8 md:px-12 flex items-center min-h-[90vh] justify-center">
+      <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[60vh]">
+        {/* Left Content */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
             Empowering You with <br />
             Digital <span className="text-orange-500">Skills</span>
@@ -31,42 +28,18 @@ export default function Home() {
               <span className="text-base">Watch how it works</span>
             </button>
           </div>
-          {/* Avatars and rating */}
-          <div className="flex items-center gap-3 mt-2">
-            {/* Avatars with group icon */}
-            <div className="flex items-center gap-2">
-              <span className="bg-orange-100 text-orange-500 rounded-full p-2 flex items-center justify-center">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m9-5.13a4 4 0 11-8 0 4 4 0 018 0zm6 8v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a6 6 0 0112 0z" />
-                </svg>
-              </span>
-              <div className="flex -space-x-3">
-                <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="user1" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-white object-cover" />
-                <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="user2" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-white object-cover" />
-                <Image src="https://randomuser.me/api/portraits/men/45.jpg" alt="user3" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-white object-cover" />
-                <Image src="https://randomuser.me/api/portraits/women/65.jpg" alt="user4" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-white object-cover" />
-                <Image src="https://randomuser.me/api/portraits/men/77.jpg" alt="user5" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-white object-cover" />
-              </div>
-            </div>
-            {/* Rating */}
-            <div className="flex flex-col items-start ml-2">
-              <div className="flex items-center gap-1">
-                <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z" />
-                </svg>
-                <span className="font-semibold text-gray-800 text-xs">(4.5)</span>
-              </div>
-              <span className="text-xs text-gray-500">1000+ Review of our course</span>
-            </div>
-          </div>
         </div>
-      </div>    
+        {/* Right Content - Placeholder for image */}
+        <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
+          {/* Add your image here */}
+        </div>
+      </div>
     </section>
 
     {/* Stats Section */}
     <section className="w-full bg-gradient-to-b from-white to-orange-50 py-10 px-4 flex flex-col items-center">
       <div className="max-w-5xl w-full flex flex-col items-center">
-        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 w-full mb-8">
+        <div className="flex flex-row justify-center gap-8 md:gap-16 w-full mb-8">
           <div className="flex flex-col items-center">
             <span className="text-4xl font-bold text-gray-900">1K <span className="text-4xl font-semibold">+</span></span>
             <span className="text-gray-500 text-lg mt-1 pr-4">Tutors</span>
@@ -233,7 +206,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="w-full py-14 px-4 flex flex-col items-center">
+    <section className="w-full bg-white py-14 px-4 flex flex-col items-center">
        {/* Get in Touch Card */}
         <div className="mb-12 flex flex-col md:flex-row items-stretch gap-6 max-w-6xl w-full mx-auto">
           {/* Card Content */}
