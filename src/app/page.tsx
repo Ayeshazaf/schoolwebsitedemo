@@ -2,31 +2,48 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-    <section className="w-full bg-white py-1 sm:py-0 px-2 sm:px-1 md:px-4 flex items-center min-h-[40vh] sm:min-h-[35vh] md:min-h-[90vh] justify-center">
+    <section className="w-full bg-white py-0 sm:py-0 px-3 sm:px-5 md:px-6 flex items-center min-h-[30vh] sm:min-h-[28vh] md:min-h-[90vh] justify-center">
       <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[60vh]">
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-2 md:mb-3 leading-tight">
+          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-2 md:mb-3 leading-tight">
             Empowering You with <br />
             Digital <span className="text-orange-500">Skills</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 max-w-lg">
             Our platform makes education flexible and convenient, so you can achieve your goals whenever and wherever you choose.
           </p>
-          <div className="flex items-center gap-4 mb-5">
-            <Link href="/courses" className="inline-flex">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded transition text-base shadow sm:px-4">
-                Join Our Course
-              </button>
-            </Link>
-            <button className="flex items-center gap-2 text-gray-700 font-medium hover:text-orange-500 transition">
-              <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gray-900">
-                <svg width="18" height="18" viewBox="0 0 20 20" fill="orange">
-                  <polygon points="6,4 16,10 6,16" />
-                </svg>
-              </span>
-              <span className="text-base">Watch how it works</span>
-            </button>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-5 w-full">
+            <div className="w-full sm:w-auto">
+              <Link href="/courses" className="inline-flex w-full sm:w-auto">
+                <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded transition text-base shadow sm:px-4 w-full sm:w-auto">
+                  Join Our Course
+                </button>
+              </Link>
+            </div>
+            {/* Only show below button on mobile, side by side on sm+ */}
+            <div className="w-full sm:w-auto flex">
+              <div className="w-full sm:hidden mt-2">
+                <button className="flex items-center gap-2 text-gray-700 font-medium hover:text-orange-500 transition w-full justify-center">
+                  <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gray-900">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="orange">
+                      <polygon points="6,4 16,10 6,16" />
+                    </svg>
+                  </span>
+                  <span className="text-base">Watch how it works</span>
+                </button>
+              </div>
+              <div className="hidden sm:flex">
+                <button className="flex items-center gap-2 text-gray-700 font-medium hover:text-orange-500 transition w-full sm:w-auto justify-center sm:justify-start">
+                  <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gray-900">
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="orange">
+                      <polygon points="6,4 16,10 6,16" />
+                    </svg>
+                  </span>
+                  <span className="text-base">Watch how it works</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         {/* Right Content - Placeholder for image */}
@@ -37,7 +54,7 @@ export default function Home() {
     </section>
 
     {/* Stats Section */}
-    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-10 px-4 flex flex-col items-center sm:py-4">
+    <section className="w-full bg-gradient-to-b from-white to-orange-50 py-14 sm:py-20 px-4 flex flex-col items-center">
       <div className="max-w-5xl w-full flex flex-col items-center">
         <div className="flex flex-row justify-center gap-8 md:gap-16 w-full mb-8">
           <div className="flex flex-col items-center">
